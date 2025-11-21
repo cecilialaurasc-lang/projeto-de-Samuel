@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #000000;
+    padding: 180px;
+    width: 1000px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #eacc33;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cadastros{
+    font-size: 30px;
+    display: block;
+    margin-bottom: 5px;
+    color: #eacc33;
+}
+.checkbox-container {
+    font-size: 20px;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #eacc33;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid ;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #eacc33;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.imagem{
+    width: 50VW;
+    height: 100VH;
+    border-radius: 0%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px #000000;
+}
+
+@media (max-width: 1723px){
+    input{
+        width: 100px;
+    }
+}
