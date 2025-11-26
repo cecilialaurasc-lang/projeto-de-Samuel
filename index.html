@@ -1,13 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
-</head>
+    <title>Gerenciamento Barbearia</title>
+    <link rel="stylesheet" href="style.css">
+    
+    </head>
 <body>
-    <h1>Teste</h1>
-    <input type="text" name="name">
+    <div class="area-principal">
+        
+        <header class="cabecalho">
+            <div class="logo-area">
+                <span class="logo-icone">✂️</span>
+                <div>
+                    <h1 class="logo-titulo">Barbearia Premium</h1>
+                    <p class="logo-subtitulo">Sistema de Gerenciamento</p>
+                </div>
+            </div>
+            <div class="area-usuario">
+                <p class="usuario-info">Administrador<br><span class="usuario-email">admin@barbearia.com</span></p>
+                <div class="usuario-avatar">AD</div>
+            </div>
+        </header>
+
+        <nav class="navegacao">
+            <button class="botao-nav ativo">📅 Agenda</button>
+            <button class="botao-nav">🧑‍🤝‍🧑 Equipe</button>
+            
+        </nav>
+            
+        <main class="conteudo">
+            
+            <section class="cards-resumo">
+                <div class="card card-total">
+                    <p class="card-titulo">Total de Agendamentos</p>
+                    <h2 class="card-numero">8</h2>
+                    <p class="card-detalhe">agendamentos hoje</p>
+                </div>
+
+                <div class="card card-confirmados">
+                    <p class="card-titulo">Confirmados</p>
+                    <h2 class="card-numero">5</h2>
+                    <p class="card-detalhe">prontos para atendimento</p>
+                </div>
+
+                <div class="card card-pendentes">
+                    <p class="card-titulo">Pendentes</p>
+                    <h2 class="card-numero">2</h2>
+                    <p class="card-detalhe">aguardando confirmação</p>
+                </div>
+            </section>
+
+            <section class="lista-agendamentos">
+                <h2 class="titulo-lista">Agendamentos de Hoje</h2>
+                
+                <div class="controles-lista">
+                    <select class="selecao-barbeiro"><option>Todos Barbeiros</option></select>
+                    <button class="botao-novo">+ Novo Agendamento</button>
+                </div>
+
+                <div class="item-agenda item-confirmado-fundo">
+                    <div class="tempo">
+                        <p class="hora">09:00</p>
+                        <p class="duracao">30min</p>
+                    </div>
+                    <div class="detalhes-item">
+                        <p class="nome-cliente">Carlos Silva <span class="status confirmado">Confirmado</span></p>
+                        <p class="servico">Corte + Barba</p>
+                        <p class="barbeiro-tel">✂️ João | 📞 (11) 98765-4321</p>
+                    </div>
+                    <div class="acoes-item">
+                        <button class="botao-acao botao-editar">Editar</button>
+                        <button class="botao-acao botao-excluir">Excluir</button>
+                    </div>
+                </div>
+
+                <div class="item-agenda item-andamento-fundo">
+                    <div class="tempo">
+                        <p class="hora">10:00</p>
+                        <p class="duracao">30min</p>
+                    </div>
+                    <div class="detalhes-item">
+                        <p class="nome-cliente">Lucas Oliveira <span class="status andamento">Em Andamento</span></p>
+                        <p class="servico">Barba</p>
+                        <p class="barbeiro-tel">✂️ João | 📞 (11) 96543-2109</p>
+                    </div>
+                    <div class="acoes-item">
+                        <button class="botao-acao botao-editar">Editar</button>
+                        <button class="botao-acao botao-excluir">Excluir</button>
+                    </div>
+                </div>
+             
+                </section>
+        </main>
+    </div>
 </body>
 </html>
